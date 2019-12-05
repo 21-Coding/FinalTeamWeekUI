@@ -138,96 +138,133 @@ $("#shakeSelect").click(function(event){
   $("#pointer").fadeIn();
   $("#shortcut4").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#multiple").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut5_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#duplicate").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut6_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#markdown").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut7_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#toggle").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut8_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#deleteLine").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut9_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#cutTo").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut10_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#moveTo").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut11_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#moveToTop").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut12_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#moveBottom").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut13_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#firstChar").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut14_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#lastChar").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut15_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#selectLine").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut16_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#upperCon").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut17_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#lowerCon").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut18_").fadeIn();
 })
-$("#shakeSelect").click(function(event){
+$("#cursorMov").click(function(event){
   event.preventDefault();
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut19_").fadeIn();
 })
+$("#findCurrent").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut19_").fadeIn();
+})
+$("#findAll").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut19_").fadeIn();
+})
+$("#inSizeFont").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut19_").fadeIn();
+})
+$("#deSizeFont").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut19_").fadeIn();
+})
+$("#selectWord").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut19_").fadeIn();
+})
+$("#selectUp").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut19_").fadeIn();
+})
+
 
 // end atom buttons to pop up banner
 
@@ -265,6 +302,36 @@ $("#newWindow").click(function(event){
   $(".noShow").hide();
   $("#pointer").fadeIn();
   $("#shortcut8").fadeIn();
+})
+$("#newIncog").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut_9").fadeIn();
+})
+$("#openClosed").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut_10").fadeIn();
+})
+$("#bookmark").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut_11").fadeIn();
+})
+$("#mini").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut_12").fadeIn();
+})
+$("#refresh").click(function(event){
+  event.preventDefault();
+  $(".noShow").hide();
+  $("#pointer").fadeIn();
+  $("#shortcut_13").fadeIn();
 })
 
 // end chrome buttons to pop up banner
