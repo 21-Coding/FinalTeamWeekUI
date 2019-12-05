@@ -71,6 +71,7 @@ button {
   margin-left: 100px;
   margin-right: 200px;
   float: right;
+
 }
 .container {
   position: absolute;
@@ -79,6 +80,11 @@ button {
 
 #game {
   display: none;
+  color: white;
+  margin-top: 500px ;
+  margin-left: 1100px;
+
+
 }
 
 

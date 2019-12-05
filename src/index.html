@@ -37,8 +37,30 @@
           <div class="dropdown-menu">
             <li><button class="border" id="moveCurrent">Move current highlighted line up/down</button></li>
             <li><button class="border" id="selectNext">Select next matching X</button></li>
+            <li><button class="border" id="shakeSelect">Deselect next matching</button></li>
             <li><button class="border" id="selectAll">Select all matching</button></li>
-            <li><button class="border" id="shakeSelect">Shake selected</button></li>
+            <li><button class="border" id="multiple">Multiple Cursors</button></li>
+            <li><button class="border" id="duplicate">Duplicate Line</button></li>
+            <li><button class="border" id="markdown">Markdown Preview</button></li>
+            <li><button class="border" id="toggle">Toggle Comments</button></li>
+            <li><button class="border" id="deleteLine">Delete Line</button></li>
+            <li><button class="border" id="cutTo">Cut To End of Line</button></li>
+            <li><button class="border" id="moveTo">Move To Beginning</button></li>
+            <li><button class="border" id="moveToTop">Move To Top File</button></li>
+            <li><button class="border" id="moveBottom">Move To Bottom File</button></li>
+            <li><button class="border" id="firstChar">Move To First Charcater</button></li>
+            <li><button class="border" id="lastChar"></button></li>
+            <li><button class="border" id="selectLine"></button></li>
+            <li><button class="border" id="upperCon"></button></li>
+            <li><button class="border" id="lowerCon"></button></li>
+            <li><button class="border" id="cursorMov"></button></li>
+            <li><button class="border" id="findCurrent"></button></li>
+            <li><button class="border" id="findAll"></button></li>
+            <li><button class="border" id="inSizeFont"></button></li>
+            <li><button class="border" id="deSizeFont"></button></li>
+            <li><button class="border" id="selectWord"></button></li>
+            <li><button class="border" id="selectUp"></button></li>
+
             </div>
           </div>
           <!-- end atom dropleft -->
@@ -81,8 +103,25 @@
           <div class="dropdown-menu">
               <li><button class="border" id="copy">Copy</button></li>
               <li><button class="border" id="paste">Paste</button></li>
-              <li><button class="border" id="pasteWithout">Paste without formatting</button></li>
+              <li><button class="border" id="pasteWithout">Paste (no format)</button></li>
               <li><button class="border" id="select">Select All</button></li>
+              <li><button class="border" id="cut">Cut</button></li>
+              <li><button class="border" id="openSet">Open Settings</button></li>
+              <li><button class="border" id="indent">Indent</button></li>
+              <li><button class="border" id="deIndent">De-Indent</button></li>
+              <li><button class="border" id="zoomIn">Zoom In</button></li>
+              <li><button class="border" id="zoomOut">Zoom Out</button></li>
+              <li><button class="border" id="find">Find</button></li>
+              <li><button class="border" id="save">Save</button></li>
+              <li><button class="border" id="saveAs">Save As</button></li>
+              <li><button class="border" id="open">Open</button></li>
+              <li><button class="border" id="bold">Bold</button></li>
+              <li><button class="border" id="italics">Italics</button></li>
+              <li><button class="border" id="underline">Underline</button></li>
+              <li><button class="border" id="create">Create</button></li>
+              <li><button class="border" id="quit">Quit</button></li>
+              <li><button class="border" id="forceQuit">Force Quit</button></li>
+              <li><button class="border" id="hide">Hide</button></li>
             </div>
         </div>
       <!-- end general dropleft -->
@@ -94,14 +133,7 @@
       <div class="cardStart rounded acme">
         <button class="btn-lg" id="startGame">START</button>
       </div>
-      <div id="game">
-        <h1 id="countDown"></h1>
-        <h2 class="score"></h2>
-        <div id="displayGoal">
-          <h3><span id="goalPlace"></span></h1>
-          </div>
 
-        </div>
 <!-- game start button and score-->
 
 
@@ -118,6 +150,29 @@
   <span class="noShow" id="shortcut2">Alt + D</span>
   <span class="noShow" id="shortcut3">Alt + Ctrl + G</span>
   <span class="noShow" id="shortcut4">Alt + Ctrl + (up)</span>
+  <span class="noShow" id="shortcut5_">Alt + click</span>
+  <span class="noShow" id="shortcut6_">Alt + Shift + D</span>
+  <span class="noShow" id="shortcut7_">Ctrl + Shift + M</span>
+  <span class="noShow" id="shortcut8_">Alt + /</span>
+  <span class="noShow" id="shortcut9_">Ctrl + Shift + K</span>
+  <span class="noShow" id="shortcut10_">Ctrl + K</span>
+  <span class="noShow" id="shortcut11_">Ctrl + A</span>
+  <span class="noShow" id="shortcut12_">Alt + (up)</span>
+  <span class="noShow" id="shortcut13_">Alt + (down)</span>
+  <span class="noShow" id="shortcut14_">Alt + (left)</span>
+  <span class="noShow" id="shortcut15_">Alt + (right)</span>
+  <span class="noShow" id="shortcut16_">Alt + L</span>
+  <span class="noShow" id="shortcut17_">Alt + K + U</span>
+  <span class="noShow" id="shortcut18_">Alt + K + L</span>
+  <span class="noShow" id="shortcut19_">Ctrl + M</span>
+  <span class="noShow" id="shortcut19_">Alt + F</span>
+  <span class="noShow" id="shortcut19_">Alt + Shift + F</span>
+  <span class="noShow" id="shortcut19_">Alt + (-)</span>
+  <span class="noShow" id="shortcut19_">Alt + (+)</span>
+  <span class="noShow" id="shortcut19_">Ctrl + Shift + (left)</span>
+  <span class="noShow" id="shortcut19_">Ctrl + Shift + P</span>
+
+
 <!-- end atom shortcuts -->
 
 
@@ -134,7 +189,27 @@
   <span class="noShow" id="shortcut9">Alt + C</span>
   <span class="noShow" id="shortcut10">Alt + V</span>
   <span class="noShow" id="shortcut11">Alt + Shift + V</span>
-  <span class="noShow" id="shortcut12">Alt + A</span>
+  <span class="noShow" id="shortcut12">Alt + X</span>
+  <span class="noShow" id="shortcut13">Alt + A</span>
+  <span class="noShow" id="shortcut14">Alt + Comma</span>
+  <span class="noShow" id="shortcut15">Alt + Tab</span>
+  <span class="noShow" id="shortcut16">Tab</span>
+  <span class="noShow" id="shortcut17">Shift + Tab</span>
+  <span class="noShow" id="shortcut18">Alt + (-)</span>
+  <span class="noShow" id="shortcut19">Alt + (+)</span>
+  <span class="noShow" id="shortcut20">Alt + F</span>
+  <span class="noShow" id="shortcut21">Alt + S</span>
+  <span class="noShow" id="shortcut22">Alt + Shift + S</span>
+  <span class="noShow" id="shortcut23">Alt + O</span>
+  <span class="noShow" id="shortcut24">Alt + B</span>
+  <span class="noShow" id="shortcut25">Alt + I</span>
+  <span class="noShow" id="shortcut26">Alt + U</span>
+  <span class="noShow" id="shortcut27">Alt + K</span>
+  <span class="noShow" id="shortcut28">Alt + Q</span>
+  <span class="noShow" id="shortcut29">Windows + Alt + Esc</span>
+  <span class="noShow" id="shortcut30">Alt + H</span>
+
+
 <!-- end general shortcuts -->
 
 
@@ -145,6 +220,7 @@
 </div>
 
 </div>
+
 <div id="game">
   <h1 id="countDown"></h1>
   <h2 class="score"></h2>
@@ -153,7 +229,6 @@
     </div>
 
   </div>
-
 
 
 
