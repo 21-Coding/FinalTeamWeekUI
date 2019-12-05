@@ -77,7 +77,6 @@ function countDownTimer(game){
 $(document).ready(function(){
   let game = new Game();
   let collectionArray = game.collectionArray;
-  $('#game').show();
   countDownTimer(game);
   game.copyCountDown();
   // Collect on key press array.
@@ -85,6 +84,9 @@ $(document).ready(function(){
     event.preventDefault();
     collectionArray.push(event.keyCode);
     console.log(collectionArray);
+  });
+  $('#startGame').click(function(event) {
+    $('#game').toggle();
   });
 
 });
@@ -211,4 +213,3 @@ $("#select").click(function(event){
 })
 
 // end general buttons to pop up banner
-

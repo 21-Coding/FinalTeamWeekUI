@@ -9,8 +9,8 @@
   <!-- container with html editor and text entry -->
   <div class="all">
 
-    <div class="container">
-      <h1 class="pacifico"><span class="red">Dev</span><span class="yellow">Shortcuts</span></h1>
+    <!-- <div class="container"> -->
+      <h1 class="pacifico sizing"><span class="blue">Dev</span><span class="yellow">Shortcuts</span></h1>
       <div class="rounded" id="editor">
         <p>function foo(items) {
           var x = "All this is syntax highlighted";
@@ -19,15 +19,8 @@
       </div>
 
 
-<!-- added for questions -->
-<div id="game">
-   <h1 id="countDown"></h1>
-   <h2 class="score"></h2>
-   <div id="displayGoal">
-     <h3><span id="goalPlace"></span></h1>
-   </div>
 
-    </div>
+
     <!-- end container  -->
 
 
@@ -40,7 +33,7 @@
 
         <!-- atom dropleft button -->
         <div class="btn-group dropleft">
-          <button class="pacifico" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Atom</button>
+          <button class="pacifico size" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Atom</button>
           <div class="dropdown-menu">
             <li><button class="border" id="moveCurrent">Move current highlighted line up/down</button></li>
             <li><button class="border" id="selectNext">Select next matching X</button></li>
@@ -63,7 +56,7 @@
 
         <!-- chrome dropleft button -->
         <div class="btn-group dropleft">
-          <button class="pacifico" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chrome</button>
+          <button class="pacifico size" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chrome</button>
           <div class="dropdown-menu">
               <li><button class="border" id="clearConsole">Clear Console Log</button></li>
               <li><button class="border" id="openInspector">Open inspector</button></li>
@@ -84,25 +77,39 @@
 
         <!-- general dropleft button -->
         <div class="btn-group dropleft">
-          <button class="pacifico" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">General</button>
+          <button class="pacifico size" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">General</button>
           <div class="dropdown-menu">
               <li><button class="border" id="copy">Copy</button></li>
               <li><button class="border" id="paste">Paste</button></li>
               <li><button class="border" id="pasteWithout">Paste without formatting</button></li>
               <li><button class="border" id="select">Select All</button></li>
             </div>
-         </div>
+        </div>
       <!-- end general dropleft -->
 
 
 
       </div>
+<!-- game start button and score-->
+      <div class="cardStart rounded acme">
+        <button class="btn-lg" id="startGame">START</button>
+      </div>
+      <div id="game">
+        <h1 id="countDown"></h1>
+        <h2 class="score"></h2>
+        <div id="displayGoal">
+          <h3><span id="goalPlace"></span></h1>
+          </div>
+
+        </div>
+<!-- game start button and score-->
+
+
+    </div>
 
 
 
-
-  </div>
-</div>
+<!-- </div> -->
 <div id="pointer">
 
 
@@ -137,7 +144,19 @@
 
 </div>
 
-
 </div>
+<div id="game">
+  <h1 id="countDown"></h1>
+  <h2 class="score"></h2>
+  <div id="displayGoal">
+    <h3><span id="goalPlace"></span></h1>
+    </div>
+
+  </div>
+
+
+
+
+
 </body>
 </html>

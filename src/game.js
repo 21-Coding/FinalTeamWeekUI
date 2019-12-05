@@ -200,7 +200,7 @@ correctSelectAllAnswer(interval){
     this.addPointsReset()
   } else if (this.starterScore <= 1){
     clearInterval(interval)
-    this.addPointsReset(
+    this.addPointsReset();
 
   }
 }
